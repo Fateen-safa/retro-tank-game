@@ -1,0 +1,10 @@
+# Full Ansimuz asset pack (34 MB). The game only uses the curated copy in TankGame-Assets/.
+Legacy Collection/
+
+# Build output — recreate with: python game/build.py
+dist/
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+__pycache__/

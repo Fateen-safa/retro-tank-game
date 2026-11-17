@@ -1,0 +1,259 @@
+{
+  "tank": {
+    "hp": 5,
+    "lives": 3,
+    "speed": 92,
+    "invulnMs": 700,
+    "respawnInvulnMs": 2000,
+    "teleportInvulnMs": 400,
+    "maxAimDownDeg": 15,
+    "parryWindowMs": 250,
+    "parryCooldownMs": 1000,
+    "parrySuccessCooldownMs": 300,
+    "parryRadius": 62
+  },
+  "parry": {
+    "damageMultiplier": 2,
+    "reflectSpeedScale": 1.3,
+    "score": 50
+  },
+  "teleport": {
+    "range": 26,
+    "cooldownMs": 600
+  },
+  "weapons": {
+    "bolt": {
+      "speed": 320,
+      "fireRate": 4,
+      "damage": 1,
+      "lifetimeMs": 1800
+    },
+    "spread": {
+      "speed": 280,
+      "fireRate": 3,
+      "damage": 1,
+      "count": 3,
+      "spreadDeg": 12,
+      "lifetimeMs": 1400
+    },
+    "charged": {
+      "speed": 360,
+      "damage": 4,
+      "minChargeMs": 450,
+      "lifetimeMs": 2000
+    }
+  },
+  "powerUps": {
+    "durationMs": 15000,
+    "pickupLifetimeMs": 9000,
+    "dropWeights": {
+      "health": 2,
+      "charged": 3,
+      "spread": 3
+    }
+  },
+  "enemyShots": {
+    "pulse": {
+      "speed": 140,
+      "damage": 1,
+      "lifetimeMs": 4500
+    },
+    "spark": {
+      "speed": 190,
+      "damage": 1,
+      "lifetimeMs": 3500
+    },
+    "rain": {
+      "speed": 260,
+      "damage": 1,
+      "lifetimeMs": 3000
+    },
+    "bomb": {
+      "gravity": 340,
+      "damage": 1,
+      "blastRadius": 34,
+      "lifetimeMs": 4000
+    },
+    "fire": {
+      "speed": 115,
+      "damage": 2,
+      "turnRate": 2.4,
+      "lifetimeMs": 6000
+    },
+    "wave": {
+      "speed": 210,
+      "damage": 1,
+      "lifetimeMs": 4000
+    },
+    "ebolt": {
+      "speed": 230,
+      "damage": 1,
+      "lifetimeMs": 3500
+    }
+  },
+  "rain": {
+    "warnMs": 750,
+    "spreadX": 200
+  },
+  "enemies": {
+    "walker": {
+      "hp": 2,
+      "speed": 34,
+      "lungeRange": 90,
+      "lungeScale": 2.6,
+      "contactDamage": 1,
+      "score": 100,
+      "dropChance": 0.08
+    },
+    "flyer": {
+      "hp": 2,
+      "speed": 85,
+      "amplitude": 46,
+      "diveRange": 120,
+      "diveSpeed": 190,
+      "contactDamage": 1,
+      "score": 150,
+      "dropChance": 0.1
+    },
+    "bipedal": {
+      "hp": 4,
+      "eliteHp": 7,
+      "speed": 26,
+      "range": 190,
+      "fireEveryMs": 1500,
+      "eliteFireEveryMs": 3200,
+      "contactDamage": 1,
+      "score": 250,
+      "dropChance": 0.2
+    },
+    "bomber": {
+      "hp": 6,
+      "speed": 70,
+      "hoverY": 88,
+      "dropEveryMs": 2000,
+      "cluster": 3,
+      "clusterSpreadX": 55,
+      "contactDamage": 1,
+      "score": 300,
+      "dropChance": 0.3
+    },
+    "crate": {
+      "hp": 1,
+      "score": 25
+    },
+    "mech": {
+      "hp": 90,
+      "speed": 40,
+      "walkMs": 2400,
+      "burstGapMs": 260,
+      "restMs": 1100,
+      "crouchMs": 650,
+      "jumpMs": 900,
+      "jumpHeight": 130,
+      "landDamage": 2,
+      "healthDrops": [
+        45
+      ],
+      "contactDamage": 1,
+      "score": 3000,
+      "phases": [
+        {
+          "speedScale": 1.0,
+          "burst": 3,
+          "aimJitter": 30,
+          "homing": 0,
+          "rain": 0,
+          "rainEveryMs": 0
+        },
+        {
+          "speedScale": 1.2,
+          "burst": 4,
+          "aimJitter": 20,
+          "homing": 0,
+          "rain": 6,
+          "rainEveryMs": 0
+        },
+        {
+          "speedScale": 1.5,
+          "burst": 5,
+          "aimJitter": 12,
+          "homing": 2,
+          "rain": 9,
+          "rainEveryMs": 1500
+        }
+      ]
+    },
+    "strafer": {
+      "hp": 6,
+      "speed": 170,
+      "fireEveryMs": 900,
+      "fanCount": 3,
+      "fanDeg": 14,
+      "contactDamage": 1,
+      "score": 350,
+      "dropChance": 0.3,
+      "heavyHp": 12,
+      "heavyBombEveryMs": 260
+    },
+    "gunship": {
+      "hp": 55,
+      "speed": 120,
+      "strafeSpeed": 260,
+      "strafeY": 210,
+      "hoverY": 96,
+      "attackGapMs": 1700,
+      "volley": 3,
+      "carpetEveryMs": 170,
+      "strafeShotEveryMs": 160,
+      "enragedScale": 1.4,
+      "healthDrops": [
+        70,
+        35
+      ],
+      "contactDamage": 1,
+      "score": 4000
+    },
+    "dreadnought": {
+      "hp": 150,
+      "hoverY": 118,
+      "volleyEveryMs": 2300,
+      "beamChargeMs": 900,
+      "beamMs": 1500,
+      "beamShotEveryMs": 65,
+      "beamGapDeg": 11,
+      "minionEveryMs": 9000,
+      "healthDrops": [
+        100,
+        50
+      ],
+      "contactDamage": 2,
+      "score": 8000,
+      "phases": [
+        {
+          "fan": 5,
+          "fanDeg": 9,
+          "homing": 0,
+          "beamEvery": 0,
+          "rainEveryMs": 0,
+          "speedScale": 1.0
+        },
+        {
+          "fan": 5,
+          "fanDeg": 8,
+          "homing": 0,
+          "beamEvery": 2,
+          "rainEveryMs": 2600,
+          "speedScale": 1.15
+        },
+        {
+          "fan": 7,
+          "fanDeg": 7,
+          "homing": 2,
+          "beamEvery": 2,
+          "rainEveryMs": 1500,
+          "speedScale": 1.4
+        }
+      ]
+    }
+  }
+}
